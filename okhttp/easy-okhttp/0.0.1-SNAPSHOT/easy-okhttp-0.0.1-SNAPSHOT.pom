@@ -1,0 +1,102 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hyts.okhttp</groupId>
+  <artifactId>easy-okhttp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Downey.Alex is comp</name>
+  <dependencies>
+  	<dependency>
+  	<groupId>com.squareup.okhttp3</groupId>
+  	<artifactId>okhttp</artifactId>
+  	<version>3.6.0</version>
+  </dependency>
+  <dependency>  
+     <groupId>junit</groupId>  
+     <artifactId>junit</artifactId>  
+     <version>${junit.version}</version>  
+     <scope>test</scope>  
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+	<dependency>
+    	<groupId>com.alibaba</groupId>
+    	<artifactId>fastjson</artifactId>
+    	<version>${fastjson.version}</version>
+	</dependency>
+      <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+      <dependency>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+          <version>1.2.16</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.12</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+          <version>1.7.12</version>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+  <properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<fastjson.version>1.2.38</fastjson.version>
+    	<junit.version>4.10</junit.version>
+  </properties>
+  
+    <developers>  
+     <!--某个项目开发者的信息-->
+        <developer>  
+         <!--SCM里项目开发者的唯一标识符-->
+            <id>easy-okhttp</id>
+            <!--项目开发者的全名-->
+            <name>Downey.Alex(LiBo)</name>  
+            <!--项目开发者的email-->
+            <email>alex.link@foxmail.com</email>  
+            <!--项目开发者的主页的URL-->
+            <url>https://github.com/alex4java</url>
+            <!--项目开发者在项目中扮演的角色，角色元素描述了各种角色-->
+            <roles>  
+                <role>Project Manager</role>  
+                <role>Project Developer</role>
+                <role>Architect</role>  
+            </roles> 
+            <!--项目开发者所属组织--> 
+            <organization>Alex4Dream</organization>  
+            <!--项目开发者所属组织的URL-->
+            <organizationUrl>https://github.com/Alex4Dream</organizationUrl>  
+            <!--项目开发者属性，如即时消息如何处理等-->
+            <properties>  
+                <dept>No</dept>  
+            </properties> 
+            <!--项目开发者所在时区， -11到12范围内的整数。--> 
+            <timezone>-9</timezone>  
+        </developer>  
+    </developers>  
+  
+   <licenses>
+        <license>
+            <name>The Apache License (2.0)</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+  
+  <!-- 控制规定设计jdk开发版本 -->
+  <build>
+      <finalName>${artifactId}-${version}</finalName>
+    <plugins>  
+        <plugin>  
+            <groupId>org.apache.maven.plugins</groupId>  
+            <artifactId>maven-compiler-plugin</artifactId>  
+            <configuration>  
+                <source>1.8</source>  
+                <target>1.8</target>  
+            </configuration>  
+        </plugin>  
+    </plugins>  
+  </build> 
+</project>
